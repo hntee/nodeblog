@@ -1,0 +1,75 @@
+[Tue Mar 04 2014 13:38:48 GMT+0800 (CST)] /
+TypeError: /mnt/86/Dropbox/code/node.js/N-blog/views/index.ejs:9
+    7|     日期：<%= post.time.minute %> | 
+    8|     标签：
+ >> 9|     <% post.tags.forEach(function (tag, index) { %>
+    10|       <% if (tag) { %>
+    11|         <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+    12|       <% } %>
+
+Cannot call method 'forEach' of undefined
+    at buf.push.
+.buf (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:720)
+    at Array.forEach (native)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:58)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:35:35)
+    at /mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:249:15
+    at Object.exports.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:287:13)
+    at View.exports.renderFile [as engine] (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:317:20)
+    at View.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/view.js:76:8)
+    at Function.app.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/application.js:504:10)
+    at ServerResponse.res.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/response.js:801:7)
+[Tue Mar 04 2014 13:38:53 GMT+0800 (CST)] /
+TypeError: /mnt/86/Dropbox/code/node.js/N-blog/views/index.ejs:9
+    7|     日期：<%= post.time.minute %> | 
+    8|     标签：
+ >> 9|     <% post.tags.forEach(function (tag, index) { %>
+    10|       <% if (tag) { %>
+    11|         <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+    12|       <% } %>
+
+Cannot call method 'forEach' of undefined
+    at buf.push.
+.buf (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:720)
+    at Array.forEach (native)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:58)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:35:35)
+    at /mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:249:15
+    at Object.exports.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:287:13)
+    at View.exports.renderFile [as engine] (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:317:20)
+    at View.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/view.js:76:8)
+    at Function.app.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/application.js:504:10)
+    at ServerResponse.res.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/response.js:801:7)
+[Tue Mar 04 2014 13:39:02 GMT+0800 (CST)] /
+TypeError: /mnt/86/Dropbox/code/node.js/N-blog/views/index.ejs:9
+    7|     日期：<%= post.time.minute %> | 
+    8|     标签：
+ >> 9|     <% post.tags.forEach(function (tag, index) { %>
+    10|       <% if (tag) { %>
+    11|         <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+    12|       <% } %>
+
+Cannot call method 'forEach' of undefined
+    at buf.push.
+.buf (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:720)
+    at Array.forEach (native)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:31:58)
+    at eval (eval at <anonymous> (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:236:14), <anonymous>:35:35)
+    at /mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:249:15
+    at Object.exports.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:287:13)
+    at View.exports.renderFile [as engine] (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/ejs/lib/ejs.js:317:20)
+    at View.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/view.js:76:8)
+    at Function.app.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/application.js:504:10)
+    at ServerResponse.res.render (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/response.js:801:7)
+[Tue Mar 04 2014 14:26:40 GMT+0800 (CST)] /
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/mongodb/lib/mongodb/db.js:240:11)
+    at Function.Post.getTen (/mnt/86/Dropbox/code/node.js/N-blog/models/post.js:66:11)
+    at /mnt/86/Dropbox/code/node.js/N-blog/routes/index.js:12:10
+    at callbacks (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/router/index.js:164:37)
+    at param (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/router/index.js:138:11)
+    at pass (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/router/index.js:173:5)
+    at Object.router (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/lib/router/index.js:33:10)
+    at next (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/node_modules/connect/lib/proto.js:193:15)
+    at next (/mnt/86/Dropbox/code/node.js/N-blog/node_modules/express/node_modules/connect/lib/middleware/session.js:318:9)
